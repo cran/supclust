@@ -101,7 +101,7 @@ pelora(x, y, u = NULL, noc = 10, lambda = 1/32, flip = "pm",
 \seealso{\code{\link{wilma}} for another supervised clustering technique.}
 \examples{
 ## Working with a "real" microarray dataset
-data(leukemia)
+data(leukemia, package="supclust")
 
 ## Generating random test data: 3 observations and 250 variables (genes)
 set.seed(724)

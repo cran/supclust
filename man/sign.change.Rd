@@ -40,7 +40,7 @@ sign.change(x, y)
 \seealso{\code{\link{pelora}}, as well as for older methodology,
   \code{\link{wilma}} and \code{\link{sign.flip}}.}
 \examples{
-data(leukemia)
+data(leukemia, package="supclust")
 
 op <- par(mfrow=c(1,3))
 plot(leukemia.x[,69],leukemia.y)

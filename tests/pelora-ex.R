@@ -1,5 +1,5 @@
 library(supclust)
-data(leukemia)
+data(leukemia, package="supclust")
 
 set.seed(724)
 xN <- matrix(rnorm(750), 3, 250)

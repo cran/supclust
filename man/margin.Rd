@@ -35,7 +35,7 @@ margin(x, resp)
   that is used there. 
 }
 \examples{
-data(leukemia)
+data(leukemia, package="supclust")
 op <- par(mfrow=c(1,3))
 plot(leukemia.x[,69],leukemia.y)
 title(paste("Margin = ", round(margin(leukemia.x[,69], leukemia.y),2)))

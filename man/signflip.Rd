@@ -38,7 +38,7 @@ sign.flip(x, y)
 \seealso{\code{\link{wilma}} and \code{\link{score}}, as well as for a
   newer methodology, \code{\link{pelora}} and \code{\link{sign.change}}.}
 \examples{
-data(leukemia)
+data(leukemia, package="supclust")
 
 op <- par(mfrow=c(1,3))
 plot(leukemia.x[,69],leukemia.y)

@@ -1,0 +1,10 @@
+2004-08-17  Martin Maechler <maechler@stat.math.ethz.ch>
+
+	* DESCRIPTION (Version): 1.0-2
+
+	* tests/pelora-ex.Rout.save: update
+	* tests/wilma-ex.Rout.save: dito
+
+	* man/pelora.Rd: and many more: use  
+		data(leukemia, package = "supclust")
+

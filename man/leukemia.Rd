@@ -1,9 +1,9 @@
 \name{leukemia}
+\docType{data}
 \alias{leukemia}
 \alias{leukemia.x}
 \alias{leukemia.y}
 \alias{leukemia.z}
-\non_function{}
 \title{A part of the Golub's famous AML/ALL-leukemia dataset}
 \description{Part of the training set of the famous AML/ALL-leukemia
   dataset from the Whitehead Institute.  It has been reduced to 250
@@ -28,7 +28,7 @@ data(leukemia)
 }
 \author{Marcel Dettling}
 \examples{
-data(leukemia)
+data(leukemia, package="supclust")
 str(leukemia.x)
 str(leukemia.y)
 str(leukemia.z)

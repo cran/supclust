@@ -63,7 +63,7 @@ predict.pelora(object, newdata = NULL, newclin = NULL,
 \seealso{\code{\link{pelora}}}
 \examples{
 ## Working with a "real" microarray dataset
-data(leukemia)
+data(leukemia, package="supclust")
 
 ## Generating random test data: 3 observations and 250 variables (genes)
 set.seed(724)

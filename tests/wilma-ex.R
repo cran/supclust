@@ -1,6 +1,6 @@
 ## Loading the data
 library(supclust)
-data(leukemia)
+data(leukemia, package="supclust")
 
 ## A subsample that gave seg.faults earlier:
 ii <- c(4:12, 14, 16:18, 20:22, 25, 27:31, 34, 36:38)
