@@ -47,6 +47,8 @@ pelora <- function(x, y, u = NULL, noc = 10, lambda = 1/32, flip = "pm",
         x      <- stndz$x
         means  <- stndz$means
         sdevs  <- stndz$sdevs
+        if (any(sdevs==0))
+          stop ("There are predictor variables with st. dev. = 0")
       }
     else
       {
