@@ -20,3 +20,10 @@
 	* DESCRIPTION (Version): 1.0-4
 
 	* R/wilma.R: minor bug fix in line 118 of the code
+
+
+2005-05-18 Marcel Dettling <dettling@jhu.edu>
+
+	* DESCRIPTION (Version: 1.0-5
+
+	* R/wilma.R
