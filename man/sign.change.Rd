@@ -32,7 +32,7 @@ sign.change(x, y)
   \emph{Finding Groups of Predictive Genes from Microarray Data}, see
   \url{http://stat.ethz.ch/~dettling/supervised.html}
 
-  Marcel Dettling and Peter Bühlmann (2004).
+  Marcel Dettling and Peter BÃ¼hlmann (2004).
   Finding Predictive Gene Groups from Microarray Data.
   To appear in the \emph{Journal of Multivariate Analysis}.
 }

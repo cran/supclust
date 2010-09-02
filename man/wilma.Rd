@@ -62,11 +62,11 @@ wilma(x, y, noc, genes = NULL, flip = TRUE, once.per.clust = FALSE, trace = 0)
   \emph{Supervised Clustering of Genes}, see
   \url{http://stat.ethz.ch/~dettling/supercluster.html}
 
-  Marcel Dettling and Peter Bühlmann (2002).
+  Marcel Dettling and Peter BÃ¼hlmann (2002).
   Supervised Clustering of Genes.
   \emph{Genome Biology}, \bold{3}(12): research0069.1-0069.15.
 
-  Marcel Dettling and Peter Bühlmann (2004).
+  Marcel Dettling and Peter BÃ¼hlmann (2004).
   Finding Predictive Gene Groups from Microarray Data.
   To appear in the \emph{Journal of Multivariate Analysis}.
 }

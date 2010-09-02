@@ -10,7 +10,7 @@
 	   /*						   */
 	   /************************************************/
 
-/* M.Mächler (2003-06):
+/* M.MÃ¤chler (2003-06):
  *	o  Improve margin() ; much more clean up,
  *	o  final for(), and error checking, not while()
  *	o  "verbose" printing
@@ -174,7 +174,7 @@ double get_new_gene(double x[], double y[], int indres[], int cluster_size,
 	if(verbose) Rprintf("g_new_g(): best margin > 0 at %d", j_max);
 	return j_max;
     }
-    else { /* der Score für die ganze Matrix berechnet	*/
+    else { /* der Score fÃ¼r die ganze Matrix berechnet	*/
 	for (j=0, k = 0; j < p; j++) {
 	    if (!used[j]) {
 		for (i=0; i < n; i++)
@@ -247,7 +247,7 @@ void R_multicluster(double *y, int *resp,	/* [1:2] */
     double *score_v		= (double *) R_alloc(*p, sizeof(double));
     double *margin_v		= (double *) R_alloc(*p, sizeof(double));
 
-    /*	Vergrösserung des Clusters  */
+    /*	VergrÃ¶sserung des Clusters  */
     size = *gl_size;
 
     /*	Identifizieren des ersten Gens	*/
@@ -329,7 +329,7 @@ void R_multicluster(double *y, int *resp,	/* [1:2] */
     if(!foundBest)
 	REprintf("R_multicluster() __BUG__ : not foundBest!!");
     if(! *once_per_clust)
-	/* Sperren schon benutzter Gene für den nächsten Cluster */
+	/* Sperren schon benutzter Gene fÃ¼r den nÃ¤chsten Cluster */
 	for (i=0; i < c; i++)
 	    used[genes_in_cluster[i] - 1] = 1;
     *gl_size = c;/* return the size */

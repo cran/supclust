@@ -15,7 +15,7 @@
  o	much clean up
  */
 
-/*  <R.h> ist nötig für R_alloc und die Sortieralgorithmen */
+/*  <R.h> ist nÃ¶tig fÃ¼r R_alloc und die Sortieralgorithmen */
 #include <R.h>
 
 /*  Weitere Hilfsfunktionen aus R */
@@ -39,7 +39,7 @@ static double sum(double *x, int n)
   return(total);
 }
 
-/*  Diese Funktion berechnet das arith. Mittel eines Vektors der Länge n */
+/*  Diese Funktion berechnet das arith. Mittel eines Vektors der LÃ¤nge n */
 static double mean(double *x, int n)
 {
   return(sum(x,n)/n);
@@ -76,7 +76,7 @@ void txwx (double *W, double *X, double *tXWX, double *WX, int m, int n)
   F77_CALL(dgemm)(trtX,trW, &n, &n, &m, &one, X, &m, WX,&m, &zero, tXWX,&n);
 }
 
-/*  Lösen eines Gleichungssystems */
+/*  LÃ¶sen eines Gleichungssystems */
 static
 void loes_gls (double *A, double *b, int n, int *pivot, int info)
 {

@@ -26,7 +26,7 @@ margin(x, resp)
   \emph{Supervised Clustering of Genes}, see
   \url{http://stat.ethz.ch/~dettling/supercluster.html}
 
-  Marcel Dettling and Peter Bühlmann (2002).
+  Marcel Dettling and Peter BÃ¼hlmann (2002).
   Supervised Clustering of Genes.
   \emph{Genome Biology}, \bold{3}(12): research0069.1-0069.15.
 }
