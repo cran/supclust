@@ -1,19 +1,32 @@
-2004-08-17  Martin Maechler <maechler@stat.math.ethz.ch>
+2011-11-28  Martin Maechler  <maechler@stat.math.ethz.ch>
 
-	* DESCRIPTION (Version): 1.0-2
+	* NAMESPACE: newly added; Note: S3 methods now "invisible"
 
-	* tests/pelora-ex.Rout.save: update
-	* tests/wilma-ex.Rout.save: dito
+	* DESCRIPTION (Version): 1.0-7; Imports: class, rpart (instead of
+	"suggests" cheat)
 
-	* man/pelora.Rd: and many more: use  
-		data(leukemia, package = "supclust")
+	* R/*.R: no longer need PACKAGE= (and strings) in .C() calls
 
-2004-11-16 Marcel Dettling <dettling@jhu.edu>
+	* R/zzz.R: minimal; dynlib now via NAMESPACE
 
-	* DESCRIPTION (Version): 1.0-3
+2011-08-08  Martin Maechler  <maechler@stat.math.ethz.ch>
 
-	* R/pelora.R: added a check for variables with st. dev. = 0
+	* R/*.R, man/score.Rd: get rid of `..' (backward - forward quoting)
 
+2010-09-02  Martin Maechler  <maechler@stat.math.ethz.ch>
+
+	* DESCRIPTION (Maintainer): Martin (was 'Marcel')
+	* DESCRIPTION (Version): 1.0-6 --> released to CRAN
+
+2009-08-20  Kurt Hornik <cran@r-project.org>
+
+	* DESCRIPTION (Version): 1.0-5-1 -- ORPHANED on CRAN
+
+2005-05-18 Marcel Dettling <dettling@jhu.edu>
+
+	* DESCRIPTION (Version): 1.0-5
+
+	* R/wilma.R
 
 2005-05-10 Marcel Dettling <dettling@jhu.edu>
 
@@ -22,8 +35,19 @@
 	* R/wilma.R: minor bug fix in line 118 of the code
 
 
-2005-05-18 Marcel Dettling <dettling@jhu.edu>
+2004-11-16 Marcel Dettling <dettling@jhu.edu>
 
-	* DESCRIPTION (Version: 1.0-5
+	* DESCRIPTION (Version): 1.0-3
 
-	* R/wilma.R
+	* R/pelora.R: added a check for variables with st. dev. = 0
+
+
+2004-08-17  Martin Maechler <maechler@stat.math.ethz.ch>
+
+	* DESCRIPTION (Version): 1.0-7 (?)
+
+	* tests/pelora-ex.Rout.save: update
+	* tests/wilma-ex.Rout.save: dito
+
+	* man/pelora.Rd: and many more: use
+		data(leukemia, package = "supclust")

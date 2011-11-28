@@ -19,7 +19,7 @@ back.search <- function(genes, x, y, verbose = FALSE)
 		reduced	   <- TRUE
 	    }
 	}
-	
+
 	if ((sc <- score(mx <- rowMeans(x[, genes]), y)) > 0)
 	{
 	    old.score <- sc
@@ -41,7 +41,7 @@ back.search <- function(genes, x, y, verbose = FALSE)
 		genes	   <- genes[-indices[imax]]
 		reduced	   <- TRUE
               }
-          } 
+          }
       }
     genes
   }
@@ -50,24 +50,22 @@ back.search <- function(genes, x, y, verbose = FALSE)
 ## The margin function for Wilma
 margin <- function(x, resp)
   {
-    .C("R_margin",
+    .C(R_margin,
        as.double(x[order(resp)]),
        as.integer(sum(resp==0)),
        as.integer(sum(resp==1)),
-       re = double(1),
-       PACKAGE = "supclust")$re
+       re = double(1))$re
   }
 
 
 ## The score function for Wilma
 score <- function(x, resp)
   {
-    .C("R_score",
+    .C(R_score,
        as.double(x),
        as.integer(resp),
        as.integer(length(x)),
-       re = double(1),
-       PACKAGE = "supclust")$re
+       re = double(1))$re
   }
 
 
@@ -76,7 +74,7 @@ sign.flip  <- function(x, y)
   {
     y <- as.integer(y)
     O <- as.integer(0)
-    if(any(y < O | y > 1:1)) stop("`y' must be 0 or 1!")
+    if(any(y < O | y > 1L)) stop("'y' must be 0 or 1!")
     n <- length(y)
     scores <- apply(x, 2, score, y)
     n0 <- sum(y == O)
@@ -89,15 +87,15 @@ sign.flip  <- function(x, y)
 
 ## Classification with Wilma's clusters - nearest neighbor rule
 nnr <- function(xlearn, xtest, ylearn)
-  {
+{
     as.numeric(knn(xlearn, xtest, ylearn))-1
-  }
+}
 
 
 ## Classification with Wilma's clusters - diagonal linear discriminant analysis
 dlda <- function (xlearn, xtest, ylearn)
   {
-    ## Definition of variables    
+    ## Definition of variables
     n      <- nrow(xlearn)
     p      <- ncol(xlearn)
     nk     <- rep(0, max(ylearn) - min(ylearn) + 1)
@@ -146,7 +144,7 @@ logreg <- function(xlearn, xtest, ylearn)
 ## Classification with Wilma's clusters - aggregated trees
 aggtrees <- function(xlearn, xtest, ylearn)
   {
-    noc     <- ncol(xtest) 
+    noc     <- ncol(xtest)
     predic  <- matrix(0, nrow(xtest), noc)
     for (j in 1:noc)
       {
@@ -154,7 +152,7 @@ aggtrees <- function(xlearn, xtest, ylearn)
         model      <- rpart(ylearn ~ ., data = data.frame(xvalues))
         xvalues    <- xtest
         predic[,j] <- predict(model, newdata = data.frame(xvalues))
-      } 
+      }
     final <- rowSums(predic)
     for (j in 1:nrow(xtest))
       {
