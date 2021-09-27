@@ -1,5 +1,5 @@
-97aa03274c57c24ee9ea35c8020ed8f4 *ChangeLog
-0cb501a294d30ab69f7b26d5f982e739 *DESCRIPTION
+dd1e1b42161fecf515b3de3c10df597c *ChangeLog
+2153374f7c9d44e759f083daad612263 *DESCRIPTION
 8451b4ca10b3ecb19f656a9fcc3943ae *INDEX
 699628cf23faae8956d049b48c548aab *NAMESPACE
 6f6d5e052e85d0c4296f7ac4291bb515 *R/pelora-utils.R
@@ -9,8 +9,8 @@ cc68ed426c910ee0b2d634b9e6a325cf *R/wilma.R
 8596dc3ad0097aab3196698b535e8131 *R/zzz.R
 3582e0867f8c2a0e0fd7231d59fbb32e *README.md
 ba5b9fa649b226f5a44b314d7b72d4ca *TODO
-1a8089deeb72397a8ba318b4ac769528 *build/partial.rdb
-31bb9d88375e485a6ea6fffe2627b116 *data/leukemia.rda
+b3f9d8f7f9b529c125e368b326e1ae79 *build/partial.rdb
+d46ad0354558e218f46bc09f8f430009 *data/leukemia.rda
 e43ae5a9390d492537d936dd680d256b *man/back.search.Rd
 8fa0befa05396fdb8b17614f9a60bc2f *man/coef.pelora.Rd
 f11eafa4189e26ba69c405297b3761f1 *man/dlda.Rd
@@ -33,8 +33,8 @@ b7846f2e89c31cadd2a32198ef9116be *man/standardize.genes.Rd
 6bc147a3f0b4130c7019b9335eb7ff06 *man/summary.wilma.Rd
 6512653fcd8e23589c4ecce58d3b0d37 *man/wilma.Rd
 2a6f9e9e044a78154d3cfda5936d6f48 *src/Makevars
-60ee8d03b02c2557a8baa3e99066d576 *src/init.c
-61e9f94b17f1b39fd6c3d2a9076e456f *src/pelora.c
+545b6ddb3c8d207525cec1c7021639fc *src/init.c
+2925213b3a18648310c507e29e71ea31 *src/pelora.c
 ff180568f6f8b85702d748f7920f5a29 *src/supclust.h
 65b50922e4b3b0676b0bb0f2c361d3db *src/wilma.c
 b90e797823fa55dd83fbb8134a4046a8 *tests/pelora-ex.R
